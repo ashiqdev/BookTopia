@@ -55,33 +55,33 @@ cp example.env .env
 yarn
 ```
 
-4. run the server
+5. run the server
 
 ```bash
 yarn dev
 ```
 
-5. go to client folder
+6. go to client folder
 
 ```bash
 cd ..
 cd client
 ```
 
-6. give credentials in .env file
+7. give credentials in .env file
 
 
 ```bash
 cp example.env .env
 ```
 
-7. run the server
+8. run the server
 
 ```bash
 yarn start
 ```
 
-8. Open project at http://localhost:3000
+9. Open project at http://localhost:3000
 
 ## ❤️ Support
 
