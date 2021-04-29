@@ -10,6 +10,6 @@ A platform where you can buy/manage books
 
 ✨ _Loved the project? Give this project a star to show your support._ ✨
 
-<img src="../client/src/images/screenshot.png" style="width: 80%"/>
+<img src="./client/src/images/screenshot.png" style="width: 80%"/>
    
 </div>
