@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const createOrder = async (authToken, productId) => {
   return axios.post(
-    'https://book-shopp.herokuapp.com/api/orders',
+    `${process.env.REACT_APP_API_URL}/orders`,
     { productId },
     {
       headers: {
@@ -13,7 +13,7 @@ export const createOrder = async (authToken, productId) => {
 };
 
 export const getOrders = async (authToken) => {
-  return axios.get('https://book-shopp.herokuapp.com/api/orders', {
+  return axios.get(`${process.env.REACT_APP_API_URL}/orders`, {
     headers: {
       authToken,
     },

@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const createProduct = async (authToken, product) => {
   return axios.post(
-    'https://book-shopp.herokuapp.com/api/products',
+    `${process.env.REACT_APP_API_URL}/products`,
     { product },
     {
       headers: {
@@ -13,12 +13,12 @@ export const createProduct = async (authToken, product) => {
 };
 
 export const getProducts = async () => {
-  return axios.get('https://book-shopp.herokuapp.com/api/products');
+  return axios.get(`${process.env.REACT_APP_API_URL}/products`);
 };
 
 export const getProductById = async (authToken, id) => {
   return axios.get(
-    `https://book-shopp.herokuapp.com/api/product/${id}`,
+    `${process.env.REACT_APP_API_URL}/product/${id}`,
     {},
     {
       headers: {
@@ -30,7 +30,7 @@ export const getProductById = async (authToken, id) => {
 
 export const deleteProductById = async (authToken, id) => {
   return axios.delete(
-    `https://book-shopp.herokuapp.com/api/product/${id}`,
+    `${process.env.REACT_APP_API_URL}/product/${id}`,
     {},
     {
       headers: {

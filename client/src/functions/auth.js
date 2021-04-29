@@ -3,7 +3,7 @@ import axios from 'axios';
 export const createOrUpdateUser = async (authToken) => {
   console.log({ authToken });
   return axios.post(
-    'https://book-shopp.herokuapp.com/api/create-or-update-user',
+    `${process.env.REACT_APP_API_URL}/create-or-update-user`,
     {},
     {
       headers: {
@@ -15,7 +15,7 @@ export const createOrUpdateUser = async (authToken) => {
 
 export const currentUser = async (authToken) => {
   return axios.post(
-    'https://book-shopp.herokuapp.com/api/current-user',
+    `${process.env.REACT_APP_API_URL}/current-user`,
     {},
     {
       headers: {
