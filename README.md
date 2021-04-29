@@ -75,13 +75,19 @@ cd client
 cp example.env .env
 ```
 
-8. run the server
+8. Install dependencies
+
+```bash
+yarn
+```
+
+9. run the server
 
 ```bash
 yarn start
 ```
 
-9. Open project at http://localhost:3000
+10. Open project at http://localhost:3000
 
 ## ❤️ Support
 
