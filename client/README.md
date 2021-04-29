@@ -43,9 +43,6 @@ https://github.com/Porgramming-Hero-web-course/full-stack-server-ashiqdev
 yarn
 ```
 
-
-
-
 3. Run app
 
 ```bash
